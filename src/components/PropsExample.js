@@ -5,9 +5,9 @@ function PropsExample() {
   return (
     <div className="component-wrapper">
 
-      {/* Theory Section */}
+      
       <div className="theory-container">
-        <h2 className="section-title">📘 Theory</h2>
+        <h2 className="section-title"> Theory</h2>
         <p>
           Props (short for <b>properties</b>) are used to pass data from a parent
           component to a child component. They are <b>read-only</b>.
@@ -19,9 +19,9 @@ function PropsExample() {
         </ul>
       </div>
 
-      {/* Implementation Section */}
+      
       <div className="implementation-container">
-        <h2 className="section-title">⚡ Implementation</h2>
+        <h2 className="section-title"> Implementation</h2>
 
         <h3>1. Functional Component with Props</h3>
         <pre className="code-block">{`
@@ -47,9 +47,9 @@ class Greeting extends React.Component {
         `}</pre>
       </div>
 
-      {/* Demo Section */}
+      
       <div className="demo-box">
-        <h2 className="section-title">🚀 Demo</h2>
+        <h2 className="section-title"> Demo</h2>
         <GreetingDemo name="Aishwarya" />
         <InfoDemo name="Rahul" age={22} />
         <ClassGreetingDemo name="Student" />
@@ -58,7 +58,7 @@ class Greeting extends React.Component {
   );
 }
 
-/* -------------------- DEMO COMPONENTS -------------------- */
+
 function GreetingDemo({ name }) {
   return <p style={{ color: "#0077cc" }}>Hello, {name}!</p>;
 }

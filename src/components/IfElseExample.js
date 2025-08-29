@@ -14,15 +14,15 @@ class IfElseExample extends Component {
 
     return (
       <div className="component-wrapper">
-        {/* Theory */}
+       
         <div className="theory-container">
-          <h2 className="section-title">📘 Theory</h2>
+          <h2 className="section-title"> Theory</h2>
           <p>Conditional rendering using <b>if-else</b> statements.</p>
         </div>
 
-        {/* Implementation */}
+       
         <div className="implementation-container">
-          <h2 className="section-title">⚡ Implementation</h2>
+          <h2 className="section-title"> Implementation</h2>
           <pre className="code-block">{`
 if (isLoggedIn) {
   return <h2>Welcome!</h2>;
@@ -32,9 +32,9 @@ if (isLoggedIn) {
           `}</pre>
         </div>
 
-        {/* Demo */}
+      
         <div className="demo-box">
-          <h2 className="section-title">🚀 Demo</h2>
+          <h2 className="section-title"> Demo</h2>
           <p style={{ color: "#0077cc" }}>{message}</p>
         </div>
       </div>

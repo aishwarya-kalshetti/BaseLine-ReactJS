@@ -11,27 +11,27 @@ class Events extends Component {
     super();
     this.state = { message: "Click a button!" };
 
-    // Method 1: Binding in constructor
+    //Binding in constructor
     this.handleClick1 = this.handleClick1.bind(this);
   }
 
-  // Method 1: Normal function + bind
+  //Normal function + bind
   handleClick1() {
-    this.setState({ message: "Handled with binding in constructor ✅" });
+    this.setState({ message: "Handled with binding in constructor " });
   }
 
-  // Method 2: Arrow function (no binding needed)
+  //Arrow function (no binding needed)
   handleClick2 = () => {
-    this.setState({ message: "Handled with arrow function ✅" });
+    this.setState({ message: "Handled with arrow function " });
   };
 
-  // Method 3: Inline arrow in JSX
+  //Inline arrow in JSX
   render() {
     return (
       <div className="component-wrapper">
-        {/* Theory */}
+      
         <div className="theory-container">
-          <h2 className="section-title">📘 Theory</h2>
+          <h2 className="section-title"> Theory</h2>
           <p>
             Events in React work like normal DOM events but follow JSX syntax.  
             Methods to handle events:
@@ -43,9 +43,9 @@ class Events extends Component {
           </ul>
         </div>
 
-        {/* Implementation */}
+     
         <div className="implementation-container">
-          <h2 className="section-title">⚡ Implementation</h2>
+          <h2 className="section-title"> Implementation</h2>
           <pre className="code-block">{`
 class Events extends Component {
   constructor() {
@@ -69,13 +69,13 @@ class Events extends Component {
           `}</pre>
         </div>
 
-        {/* Demo */}
+       
         <div className="demo-box">
-          <h2 className="section-title">🚀 Demo</h2>
+          <h2 className="section-title"> Demo</h2>
           <p style={{ color: "#0077cc" }}>{this.state.message}</p>
           <button onClick={this.handleClick1}>Click 1 (Bind)</button>
           <button onClick={this.handleClick2}>Click 2 (Arrow)</button>
-          <button onClick={() => this.setState({ message: "Handled inline ✅" })}>
+          <button onClick={() => this.setState({ message: "Handled inline " })}>
             Click 3 (Inline)
           </button>
         </div>

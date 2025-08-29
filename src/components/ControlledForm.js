@@ -23,18 +23,18 @@ function ControlledForm() {
 
   return (
     <div className="component-wrapper">
-      {/* Theory Section */}
+      
       <div className="theory-container">
-        <h2 className="section-title">📘 Theory</h2>
+        <h2 className="section-title"> Theory</h2>
         <p>
           A <b>Controlled Form</b> means form data is handled by React state. Every
           input field value is synced with <code>useState</code>.
         </p>
       </div>
 
-      {/* Implementation Section */}
+
       <div className="implementation-container">
-        <h2 className="section-title">⚡ Implementation</h2>
+        <h2 className="section-title"> Implementation</h2>
         <pre className="code-block">{`
 const [formData, setFormData] = useState({
   name: "",
@@ -52,9 +52,9 @@ const [formData, setFormData] = useState({
         `}</pre>
       </div>
 
-      {/* Demo Section */}
+  
       <div className="demo-box">
-        <h2 className="section-title">🚀 Demo</h2>
+        <h2 className="section-title"> Demo</h2>
         <form className="styled-form" onSubmit={handleSubmit}>
           <label>Name:</label>
           <input
@@ -95,7 +95,7 @@ const [formData, setFormData] = useState({
           <button type="submit">Submit</button>
         </form>
 
-        {/* Display Data */}
+        
         <div className="output-box">
           <p><b>Name:</b> {formData.name}</p>
           <p><b>Email:</b> {formData.email}</p>

@@ -6,9 +6,9 @@ class ClassComponent extends Component {
     return (
       <div className="component-wrapper">
         
-        {/* Theory Section */}
+    
         <div className="theory-container">
-          <h2 className="section-title">📘 Theory</h2>
+          <h2 className="section-title">Theory</h2>
           <p>
             Class Components are ES6 classes that extend <code>React.Component</code>.
             They can hold <b>state</b>, receive <b>props</b>, and use
@@ -21,9 +21,9 @@ class ClassComponent extends Component {
           </ul>
         </div>
 
-        {/* Implementation Section */}
+       
         <div className="implementation-container">
-          <h2 className="section-title">⚡ Implementation</h2>
+          <h2 className="section-title"> Implementation</h2>
 
           <h3>1. Basic Class Component</h3>
           <pre className="code-block">{`
@@ -67,9 +67,9 @@ class Counter extends React.Component {
           `}</pre>
         </div>
 
-        {/* Demo Section */}
+        
         <div className="demo-box">
-          <h2 className="section-title">🚀 Demo</h2>
+          <h2 className="section-title"> Demo</h2>
           <HelloDemo />
           <GreetingDemo name="Aishwarya" />
           <CounterDemo />
@@ -79,7 +79,7 @@ class Counter extends React.Component {
   }
 }
 
-/* -------------------- DEMO COMPONENTS -------------------- */
+
 class HelloDemo extends Component {
   render() {
     return <p style={{ color: "#0077cc" }}>Hello, I am a Class Component!</p>;

@@ -5,9 +5,9 @@ function FunctionalComponent() {
   return (
     <div className="component-wrapper">
       
-      {/* Theory Section */}
+   
       <div className="theory-container">
-        <h2 className="section-title">📘 Theory</h2>
+        <h2 className="section-title"> Theory</h2>
         <p>
           Functional Components are just JavaScript functions that return JSX (HTML-like code).
           They are simple to write and understand. With React Hooks, they can also
@@ -20,9 +20,9 @@ function FunctionalComponent() {
         </ul>
       </div>
 
-      {/* Implementation Section */}
+    
       <div className="implementation-container">
-        <h2 className="section-title">⚡ Implementation</h2>
+        <h2 className="section-title"> Implementation</h2>
 
         <h3>1. Simple Functional Component</h3>
         <pre className="code-block">{`
@@ -66,9 +66,9 @@ function Timer() {
         `}</pre>
       </div>
 
-      {/* Demo Section */}
+      
       <div className="demo-box">
-        <h2 className="section-title">🚀 Demo</h2>
+        <h2 className="section-title"> Demo</h2>
         <HelloDemo />
         <GreetingDemo name="Aishwarya" />
         <CounterDemo />
@@ -78,7 +78,7 @@ function Timer() {
   );
 }
 
-/* -------------------- DEMO COMPONENTS -------------------- */
+
 function HelloDemo() {
   return <p style={{ color: "#0077cc" }}>Hello, I am a simple functional component!</p>;
 }

@@ -203,7 +203,7 @@ body {
   background: #ffaa00;
   color: #fff;
 }
-/* General Component Box (for non-form pages) */
+
 .component-box {
   background: rgba(255, 255, 255, 0.85);
   padding: 25px;
@@ -221,14 +221,14 @@ body {
   box-shadow: 0px 10px 20px rgba(0,0,0,0.25);
 }
 
-/* Headings inside components */
+
 .component-box h2,
 .form-container h2 {
   color: #004aad;
   margin-bottom: 15px;
 }
 
-/* Unified Buttons */
+
 button {
   background: linear-gradient(135deg, #ffcc70, #ffaa00);
   color: #fff;
@@ -329,7 +329,7 @@ button:hover {
   border: 1px solid #0077cc;
   border-radius: 6px;
 }
-/* Shared styling for ref demo */
+
 .styled-ref-box {
   display: flex;
   flex-direction: column;
@@ -368,7 +368,7 @@ button:hover {
 .styled-ref-box button:hover {
   background: #005fa3;
 }
-/* List Demo Styling */
+
 .styled-list-box {
   padding: 15px;
   margin: 15px 0;
@@ -405,7 +405,7 @@ button:hover {
   border-color: #6c63ff;
   cursor: pointer;
 }
-/* ✅ Demo Section Styling */
+
 .demo-box {
   background: #ffffff;
   padding: 20px;
@@ -426,7 +426,7 @@ button:hover {
   color: #333;
 }
 
-/* ✅ Style inputs inside demo */
+
 .demo-box input,
 .demo-box select,
 .demo-box textarea {
@@ -459,9 +459,9 @@ button:hover {
   font-weight: 500;
   transition: all 0.3s;
   
-  /* 👉 Added spacing */
-  margin-right: 10px;   /* space between buttons horizontally */
-  margin-bottom: 10px;  /* space when stacked vertically */
+ 
+  margin-right: 10px;   
+  margin-bottom: 10px;  
 }
 
 .demo-box button:hover {
@@ -469,7 +469,7 @@ button:hover {
   transform: scale(1.05);
 }
 
-/* 👉 Remove extra space on last button in a row */
+
 .demo-box button:last-child {
   margin-right: 0;
 }

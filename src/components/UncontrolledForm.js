@@ -16,18 +16,18 @@ function UncontrolledForm() {
 
   return (
     <div className="component-wrapper">
-      {/* Theory */}
+      
       <div className="theory-container">
-        <h2 className="section-title">📘 Theory</h2>
+        <h2 className="section-title"> Theory</h2>
         <p>
           An <b>Uncontrolled Form</b> uses <code>refs</code> to directly access form
           values, instead of storing them in React state.
         </p>
       </div>
 
-      {/* Implementation */}
+      
       <div className="implementation-container">
-        <h2 className="section-title">⚡ Implementation</h2>
+        <h2 className="section-title"> Implementation</h2>
         <pre className="code-block">{`
 const nameRef = useRef();
 
@@ -37,9 +37,9 @@ const nameRef = useRef();
         `}</pre>
       </div>
 
-      {/* Demo */}
+      
       <div className="demo-box">
-        <h2 className="section-title">🚀 Demo</h2>
+        <h2 className="section-title"> Demo</h2>
         <form className="styled-form" onSubmit={handleSubmit}>
           <label>Name:</label>
           <input type="text" ref={nameRef} placeholder="Enter your name" />
@@ -56,7 +56,7 @@ const nameRef = useRef();
           <button type="submit">Submit</button>
         </form>
 
-        {/* Display box */}
+        
         <div className="output-box">
           <p><b>Entered Data will be shown in alert after Submit</b></p>
         </div>

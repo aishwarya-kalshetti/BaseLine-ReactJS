@@ -5,9 +5,9 @@ function ListAndKeys() {
   return (
     <div className="component-wrapper">
 
-      {/* Theory */}
+    
       <div className="theory-container">
-        <h2 className="section-title">📘 Theory</h2>
+        <h2 className="section-title"> Theory</h2>
         <p>
           Lists in React render multiple elements. Each item should have a 
           <b> unique key </b> to help React identify changes efficiently.
@@ -18,9 +18,9 @@ function ListAndKeys() {
         </ul>
       </div>
 
-      {/* Implementation */}
+   
       <div className="implementation-container">
-        <h2 className="section-title">⚡ Implementation</h2>
+        <h2 className="section-title"> Implementation</h2>
 
         <h3>1. Simple List</h3>
         <pre className="code-block">{`
@@ -54,9 +54,9 @@ function StudentList() {
         `}</pre>
       </div>
 
-      {/* Demo */}
+    
       <div className="demo-box">
-        <h2 className="section-title">🚀 Demo</h2>
+        <h2 className="section-title"> Demo</h2>
         <FruitListDemo />
         <StudentListDemo />
       </div>
@@ -64,7 +64,7 @@ function StudentList() {
   );
 }
 
-/* -------------------- DEMO COMPONENTS -------------------- */
+
 function FruitListDemo() {
   const fruits = ["Apple", "Banana", "Mango"];
   return (

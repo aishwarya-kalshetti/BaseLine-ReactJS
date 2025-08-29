@@ -26,7 +26,7 @@ import LogicalAndExample from "./components/LogicalAndExample";
 import ListKeyRefsExample from "./components/ListKeyRefsExample";
 import RefsComponent from "./components/RefsComponents";
 
-// ✅ Import Hooks + Advanced Topics
+
 import HooksComponent from "./components/HooksComponent";
 import CoreConcepts from "./components/CoreConcepts";
 import AdvancedHooks from "./components/AdvancedHooks";
@@ -40,7 +40,7 @@ function App() {
   const [search, setSearch] = useState("");
   const [filter, setFilter] = useState("All");
 
-  // ✅ Helper function to check match
+ 
   const matchSearch = (text) => {
     if (!search) return true;
     return text.toLowerCase().includes(search.toLowerCase());
@@ -54,7 +54,7 @@ function App() {
     <Router>
       
       <div className="app-container">
-        {/* ✅ Navbar */}
+        
         <nav className="navbar">
           <div className="navbar-card">
             <h2>React Study Platform</h2>
@@ -85,7 +85,7 @@ function App() {
           </div>
         </nav>
 
-        {/* ✅ Main Content */}
+       
         <div className="content">
           <Routes>
             <Route
@@ -93,7 +93,7 @@ function App() {
               element={
                 <>
                 
-                  {/* 🔎 Search + Filter */}
+                  
                   <div className="search-filter">
                     <input
                       type="text"
@@ -123,7 +123,7 @@ function App() {
 
                   
 
-                  {/* 1️⃣ Components */}
+                 
                   {matchFilter("Components") && (
                     <section className="section">
                       <h2 className="section-title">Components</h2>
@@ -140,7 +140,7 @@ function App() {
 
                   
 
-                  {/* 2️⃣ Component API */}
+                 
                   {matchFilter("API") && (
                     <section className="section">
                       <h2 className="section-title">Component API</h2>
@@ -152,7 +152,7 @@ function App() {
                     </section>
                   )}
 
-                  {/* 3️⃣ Lifecycle */}
+                  
                   {matchFilter("Lifecycle") && (
                     <section className="section">
                       <h2 className="section-title">Component Lifecycle</h2>
@@ -164,7 +164,7 @@ function App() {
                     </section>
                   )}
 
-                  {/* 4️⃣ Props & State */}
+                  
                   {matchFilter("PropsState") && (
                     <section className="section">
                       <h2 className="section-title">Props & State</h2>
@@ -182,7 +182,7 @@ function App() {
                     </section>
                   )}
 
-                  {/* 5️⃣ Events */}
+                  
                   {matchFilter("Events") && (
                     <section className="section">
                       <h2 className="section-title">Events</h2>
@@ -194,7 +194,7 @@ function App() {
                     </section>
                   )}
 
-                  {/* 6️⃣ Forms */}
+                 
                   {matchFilter("Forms") && (
                     <section className="section">
                       <h2 className="section-title">Forms</h2>
@@ -209,7 +209,7 @@ function App() {
                     </section>
                   )}
 
-                  {/* 7️⃣ Conditional Rendering */}
+                  
                   {matchFilter("Conditional") && (
                     <section className="section">
                       <h2 className="section-title">Conditional Rendering</h2>
@@ -227,7 +227,7 @@ function App() {
                     </section>
                   )}
 
-                  {/* 8️⃣ List, Keys, Refs */}
+                 
                   {matchFilter("ListRefs") && (
                     <section className="section">
                       <h2 className="section-title">List, Keys & Refs</h2>
@@ -242,7 +242,7 @@ function App() {
                     </section>
                   )}
 
-                  {/* 9️⃣ Hooks */}
+                 
                   {matchFilter("Hooks") && (
                     <section className="section">
                       <h2 className="section-title">React Hooks</h2>
@@ -257,7 +257,7 @@ function App() {
                     </section>
                   )}
 
-                  {/* 🔟 Advanced Topics */}
+                 
                   {matchFilter("Advanced") && (
                     <section className="section">
                       <h2 className="section-title">Advanced Topics</h2>
@@ -281,7 +281,7 @@ function App() {
               }
             />
 
-            {/* ✅ Routes */}
+          
             <Route path="/functional" element={<FunctionalComponent />} />
             <Route path="/class" element={<ClassComponent />} />
             <Route path="/api" element={<ComponentAPI />} />
@@ -298,7 +298,7 @@ function App() {
             <Route path="/list" element={<ListKeyRefsExample />} />
             <Route path="/Refs" element={<RefsComponent />} />
 
-            {/* ✅ Hooks + Advanced */}
+            
             <Route path="/hooks" element={<HooksComponent />} />
             <Route path="/core" element={<CoreConcepts />} />
             <Route path="/adv-hooks" element={<AdvancedHooks />} />

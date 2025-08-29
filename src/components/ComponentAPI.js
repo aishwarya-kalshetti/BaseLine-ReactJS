@@ -10,9 +10,9 @@ class ComponentAPI extends Component {
   render() {
     return (
       <div className="component-wrapper">
-        {/* Theory */}
+       
         <div className="theory-container">
-          <h2 className="section-title">📘 Theory</h2>
+          <h2 className="section-title"> Theory</h2>
           <p>
             The <b>Component API</b> in React provides methods like{" "}
             <code>setState()</code>, <code>forceUpdate()</code>, and{" "}
@@ -25,9 +25,9 @@ class ComponentAPI extends Component {
           </ul>
         </div>
 
-        {/* Implementation */}
+       
         <div className="implementation-container">
-          <h2 className="section-title">⚡ Implementation</h2>
+          <h2 className="section-title"> Implementation</h2>
 
           <h3>1. Using setState()</h3>
           <pre className="code-block">{`
@@ -40,9 +40,9 @@ this.forceUpdate();
           `}</pre>
         </div>
 
-        {/* Demo */}
+
         <div className="demo-box">
-          <h2 className="section-title">🚀 Demo</h2>
+          <h2 className="section-title"> Demo</h2>
           <SetStateDemo />
           <ForceUpdateDemo />
         </div>
@@ -51,7 +51,7 @@ this.forceUpdate();
   }
 }
 
-/* -------- Demo Components -------- */
+
 class SetStateDemo extends Component {
   state = { count: 0 };
 

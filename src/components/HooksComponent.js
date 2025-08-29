@@ -1,10 +1,10 @@
 import React, { useState, useEffect, useRef, useContext, useReducer } from "react";
 import "../App.css";
 
-// ---------------- Context Setup ----------------
+
 const ThemeContext = React.createContext("light");
 
-// ---------------- Reducer Setup ----------------
+
 const initialState = { count: 0 };
 function reducer(state, action) {
   switch (action.type) {
@@ -18,9 +18,9 @@ function HooksComponent() {
   return (
     <div className="component-wrapper">
 
-      {/* Theory */}
+      
       <div className="theory-container">
-        <h2 className="section-title">📘 Theory</h2>
+        <h2 className="section-title"> Theory</h2>
         <p>
           React Hooks let you use state and other React features in functional components.
         </p>
@@ -33,9 +33,9 @@ function HooksComponent() {
         </ul>
       </div>
 
-      {/* Implementation */}
+      
       <div className="implementation-container">
-        <h2 className="section-title">⚡ Implementation</h2>
+        <h2 className="section-title"> Implementation</h2>
 
         <h3>1. useState</h3>
         <pre className="code-block">{`
@@ -100,9 +100,9 @@ function CounterReducer() {
         `}</pre>
       </div>
 
-      {/* Demo */}
+  
       <div className="demo-box">
-        <h2 className="section-title">🚀 Demo</h2>
+        <h2 className="section-title"> Demo</h2>
         <div className="demo-container"><CounterDemo /></div>
         <div className="demo-container"><TimerDemo /></div>
         <div className="demo-container"><InputFocusDemo /></div>
@@ -117,7 +117,7 @@ function CounterReducer() {
   );
 }
 
-/* -------------------- DEMO COMPONENTS -------------------- */
+
 function CounterDemo() {
   const [count, setCount] = useState(0);
   return (

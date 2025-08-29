@@ -5,9 +5,9 @@ function LifecycleComponent() {
   return (
     <div className="component-wrapper">
 
-      {/* Theory Section */}
+      
       <div className="theory-container">
-        <h2 className="section-title">📘 Theory</h2>
+        <h2 className="section-title">Theory</h2>
         <p>
           Lifecycle methods let you run code at specific times in a component’s
           life (mounting, updating, unmounting).
@@ -18,7 +18,7 @@ function LifecycleComponent() {
         </ul>
       </div>
 
-      {/* Implementation Section */}
+      
       <div className="implementation-container">
         <h2 className="section-title">⚡ Implementation</h2>
 
@@ -57,9 +57,9 @@ class Timer extends React.Component {
         `}</pre>
       </div>
 
-      {/* Demo Section */}
+     
       <div className="demo-box">
-        <h2 className="section-title">🚀 Demo</h2>
+        <h2 className="section-title"> Demo</h2>
         <TimerDemo />
         <ClassTimerDemo />
       </div>
@@ -67,7 +67,6 @@ class Timer extends React.Component {
   );
 }
 
-/* -------------------- DEMO COMPONENTS -------------------- */
 function TimerDemo() {
   const [seconds, setSeconds] = useState(0);
   useEffect(() => {

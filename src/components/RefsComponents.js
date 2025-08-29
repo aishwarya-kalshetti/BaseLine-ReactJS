@@ -4,9 +4,9 @@ import "../App.css";
 function RefsComponent() {
   return (
     <div className="component-wrapper">
-      {/* Theory */}
+      
       <div className="theory-container">
-        <h2 className="section-title">📘 Theory</h2>
+        <h2 className="section-title"> Theory</h2>
         <p>
           Refs in React allow direct access to DOM elements or child components
           without re-rendering.
@@ -18,9 +18,9 @@ function RefsComponent() {
         </ul>
       </div>
 
-      {/* Implementation */}
+      
       <div className="implementation-container">
-        <h2 className="section-title">⚡ Implementation</h2>
+        <h2 className="section-title"> Implementation</h2>
 
         <h3>1. useRef Hook</h3>
         <pre className="code-block">{`
@@ -55,9 +55,9 @@ class InputFocus extends React.Component {
         `}</pre>
       </div>
 
-      {/* Demo */}
+      
       <div className="demo-box">
-        <h2 className="section-title">🚀 Demo</h2>
+        <h2 className="section-title"> Demo</h2>
         <InputFocusDemo />
         <ClassInputFocusDemo />
       </div>
@@ -65,7 +65,7 @@ class InputFocus extends React.Component {
   );
 }
 
-/* -------------------- DEMO COMPONENTS -------------------- */
+
 function InputFocusDemo() {
   const inputRef = useRef(null);
   return (
